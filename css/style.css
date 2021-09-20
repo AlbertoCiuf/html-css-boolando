@@ -14,6 +14,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.wishlist {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 30px;
+  z-index: 2;
+}
+
 .product{
   position: relative;
   display: inline-block;
@@ -28,26 +40,33 @@ body {
   position: absolute;
   left: 0;
   visibility: hidden;
+  /* display: none; */
 }
 
-.product-img:hover {
-  cursor: pointer;
+.product:hover .product-img {
   visibility: hidden;
-} 
-
-.alt-img:hover {
-  visibility: visible;
+  /* display: none; */
 }
 
-.product h4 {
+.product:hover .alt-img, .product:hover .wishlist {
+  visibility: visible;
+  /* display: block; */
+}
+
+.product-details p {
+  color: grey;
+}
+
+.product-details h4 {
   text-transform: uppercase;
 }
 
-.product .price {
+.product-details .actual-price {
+  color: red;
+}
+
+.price .old-price {
   text-decoration: line-through;
 }
 
-.product .actual-price {
-  color: red;
-}
 
