@@ -5,9 +5,15 @@
 }
 
 .container {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
+
+/* .clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+} */
 
 body {
   background-color: #fff;
@@ -16,7 +22,7 @@ body {
 
 .wishlist {
   position: absolute;
-  right: 0;
+  left:90%;
   top: 15px;
   width: 30px;
   height: 30px;
@@ -26,14 +32,22 @@ body {
   z-index: 2;
 }
 
+
+
+.row {
+  display: inline-block;
+}
+
 .product{
   position: relative;
   display: inline-block;
   margin: 20px 20px 10px 0;
+  /* width: 30%; */
 }
 
 .product-img {
   height: 400px;
+  width: 100%;
 }
 
 .alt-img {
@@ -52,6 +66,8 @@ body {
   visibility: visible;
   /* display: block; */
 }
+
+
 
 .product-details p {
   color: grey;
